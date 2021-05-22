@@ -10,9 +10,6 @@ __pycache__/
 # Avoid swap files
 *.swp
 
-# Avoid DS Store
-*.DS_Store
-
 # C extensions
 *.so
 
@@ -59,7 +56,3 @@ docs/_build/
 
 # Pycharm
 .idea
-
-# models
-
-imports/

@@ -1,0 +1,16 @@
+version: '3.7'
+services:
+  base:
+    image: api-test:${BASE_NAME}
+    build:
+      context: ..
+      dockerfile: ./infra/docker/Dockerfile.base
+  app:
+    image: api-test:${APP_VERSION}
+    build:
+      context: ..
+      dockerfile: ./build/Dockerfile
+      args:
+        - BASE_IMAGE=api-test:${BASE_NAME}
+    ports:
+      - "0.0.0.0:8008:8008"

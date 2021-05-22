@@ -1,0 +1,65 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Avoid data
+*.csv
+*.tsv
+
+# Avoid swap files
+*.swp
+
+# Avoid DS Store
+*.DS_Store
+
+# C extensions
+*.so
+
+# Avoid archives
+*.tar
+*.zip
+
+# Avoid pickles
+*.pkl
+
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+.vscode/
+.env
+.venv
+.serverless/
+logs/
+log/
+volumes/
+volume/
+
+# Sphinx documentation
+docs/_build/
+
+# Mypy
+.mypy_cache
+
+# Environment 
+.envrc
+
+# Pycharm
+.idea
+
+# models
+
+imports/

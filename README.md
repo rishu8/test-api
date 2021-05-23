@@ -24,5 +24,5 @@ docker run --rm -it -p8008:8008 api-test:V0.0.1 .venv/bin/python -m apitest.app
 
 ### Once Images got built , Try to access below URL from browser.
 ```
-http://localhost:8008/
+http://localhost:8008/health
 ```

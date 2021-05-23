@@ -14,7 +14,7 @@ infra/build.py --build-base-image
 
 ## Build app image locally
 ```
-infra/build.py --build-base-image
+infra/build.py --build-app-image
 ```
 
 ## Run app image locally

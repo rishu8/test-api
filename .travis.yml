@@ -1,0 +1,13 @@
+# Disable sudo to speed up the build
+sudo: false
+
+# Set the build language to Python
+language: python
+
+# Set the python version to 3.7
+python: 3.7
+
+# build script
+script:
+  - infra/build.py --build-base-image
+  - infra/build.py --build-app-image

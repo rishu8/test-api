@@ -2,19 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="909f9fc7-4409-499e-ac65-77241a964c37" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/cicd/setup.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entrypoint.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/apitest/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/apitest.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/apitest.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/infra/build.py" beforeDir="false" afterPath="$PROJECT_DIR$/infra/build.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infra/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/infra/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infra/docker/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/infra/docker/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/apps/apitest/conf.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/apitest/conf.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/apps/apitest/core.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/apitest/core.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/apps/apitest/templates/info.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/apitest/templates/info.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -36,7 +26,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/infra/build.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="219">
@@ -44,6 +34,27 @@
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.travis.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="420">
+                <caret line="28" selection-start-line="28" selection-end-line="28" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -96,6 +107,12 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--follow-tags" />
+        <option name="title" value="Current Branch" />
+      </GitPushTagMode>
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -117,6 +134,8 @@
         <option value="$PROJECT_DIR$/infra/docker/Dockerfile" />
         <option value="$PROJECT_DIR$/infra/docker-compose.yml" />
         <option value="$PROJECT_DIR$/infra/build.py" />
+        <option value="$PROJECT_DIR$/.travis.yml" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -137,17 +156,6 @@
             <path>
               <item name="apitest" type="b2602c69:ProjectViewProjectNode" />
               <item name="apitest" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="apitest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="apitest" type="462c0819:PsiDirectoryNode" />
-              <item name="infra" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="apitest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="apitest" type="462c0819:PsiDirectoryNode" />
-              <item name="infra" type="462c0819:PsiDirectoryNode" />
-              <item name="docker" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -256,7 +264,7 @@
       <option name="presentableId" value="Default" />
       <updated>1621378980105</updated>
       <workItem from="1621378987227" duration="2641000" />
-      <workItem from="1621683316939" duration="16551000" />
+      <workItem from="1621683316939" duration="17337000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1621695124874</created>
@@ -265,11 +273,18 @@
       <option name="project" value="LOCAL" />
       <updated>1621695124874</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="initial commit">
+      <created>1621754804320</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1621754804320</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19192000" />
+    <option name="totallyTimeSpent" value="19978000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -423,6 +438,23 @@
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.travis.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="420">
+            <caret line="28" selection-start-line="28" selection-end-line="28" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>

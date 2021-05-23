@@ -9,8 +9,11 @@ services:
     image: api-test:${APP_VERSION}
     build:
       context: ..
-      dockerfile: ./build/Dockerfile
+      dockerfile: ./infra/docker/Dockerfile
       args:
         - BASE_IMAGE=api-test:${BASE_NAME}
+        - APP_NAME=${APP_NAME}
+        - APP_VERSION=${APP_VERSION}
+        - COMMIT_HASH=${GIT_COMMIT}
     ports:
       - "0.0.0.0:8008:8008"

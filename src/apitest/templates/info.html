@@ -4,12 +4,12 @@
         <title>API test Info Endpoint</title>
     </head>
     <body style="font-family: courier; font-size: 200%;">
-        <h2>Info Endpoint</h2>
+        <h2>Bendigo Test API Endpoint</h2>
         <h3>Info</h3>
             <ul>
-                <li>name: Health Test APP</li>
-                <li>build: {{ meta.build_num }}</li>
-                <li>commit: {{ meta.commit_hash }}</li>
+                <li>Name: Health {{ info.app_name }}</li>
+                <li>Version: {{ info.app_version }}</li>
+                <li>Commit: {{ info.commit_hash }}</li>
             </ul>
     </body>
 </html>

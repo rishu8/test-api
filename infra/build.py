@@ -7,6 +7,7 @@ app_name = "testapi"
 base_version = '0.0.1'
 os.environ["BASE_NAME"] = f"base-V{base_version}"
 os.environ["APP_VERSION"] = f"V{base_version}"
+os.environ["APP_NAME"] = app_name
 
 
 def build_base_image():
@@ -20,7 +21,7 @@ def build_base_image():
 
 def build_app_image():
 
-    app_image_name = os.environ["APP_IMAGE_NAME"]
+    app_image_name = os.environ["APP_NAME"]
     print("APP_IMAGE_NAME: {}".format(app_image_name))
     try:
         subprocess.check_call(["docker-compose", "-f", "./docker-compose.yml", "build", "app"])
@@ -43,10 +44,12 @@ def serialise_job_arg(action):
 
 if __name__ == "__main__":
     args = arguments_parser().parse_args()
-
+    githash = subprocess.check_output(["git", "rev-parse", "HEAD"]).strip().decode("utf-8")
     if args.build_base_image:
+        os.environ['GIT_COMMIT'] = githash
         build_base_image()
     elif args.build_app_image:
+        os.environ['GIT_COMMIT'] = githash
         build_app_image()
     else:
         arguments_parser().print_usage()

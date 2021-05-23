@@ -1,4 +1,4 @@
-from flask import Flask, request, render_template, make_response
+from flask import Flask, render_template, make_response
 from flask.views import MethodView
 
 import logging
@@ -18,7 +18,7 @@ class Info(MethodView):
     @classmethod
     def get(cls):
         template_args = {
-            "info": conf.Meta,
+            "info": conf.Info,
         }
         response = make_response(render_template('info.html', **template_args), 200)
         return response

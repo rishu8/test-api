@@ -1,8 +1,9 @@
 # Build images for TEST API App
 ## Prerequisites:
-- You need a Linux /OSX environment to run the build script. Make sure Docker got installed in the machine.
+- You need a Linux /OSX environment to run the build script. Make sure Python 3.6+ and Docker got installed in the machine.
 ```
 https://docs.docker.com/get-docker/
+https://realpython.com/installing-python/
 ```
 
 # Build and run locally:
